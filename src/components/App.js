@@ -16,11 +16,10 @@ const[selectedFigure,setSelectedFigure]=useState('');
                 <option value="circle">Circle</option>
           </select>
           <button onClick={appendShape}>Add Shape</button>
-
       </div>
       <div id="shapes-holder">
        {
-            shapesDisplay.map((shape,index)=>{
+           shapesDisplay.map((shape,index)=>{
                 return(
                 <div className={shape==='square'?'square':'circle'} key={index}/>
                 )
@@ -30,6 +29,5 @@ const[selectedFigure,setSelectedFigure]=useState('');
     </div>
   )
 }
-
 
 export default App;
