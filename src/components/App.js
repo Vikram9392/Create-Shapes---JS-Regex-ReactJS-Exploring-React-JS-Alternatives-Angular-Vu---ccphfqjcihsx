@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import '../styles/App.css';
 const App = () => {
-const[selectedFigure,setSelectedFigure]=useState('square');
- const[shapesDisplay,setShapesDisplay]=useState(['square','circle']);
+const[selectedFigure,setSelectedFigure]=useState('');
+ const[shapesDisplay,setShapesDisplay]=useState([]);
  function appendShape(){
     setShapesDisplay((prev)=>{
         return [...prev,selectedFigure]
